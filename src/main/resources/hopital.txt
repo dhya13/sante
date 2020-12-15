@@ -1,0 +1,6 @@
+3;ARGENTEUIL (Centre Hospitalier V Dupouy);69 rue du Lt Colonel Prudhon;01 34 23 15 40
+4; BEAUMONT/OISE (CHI DES PORTES DE L'OISE);25 Rue Edmont Turcq	95260	BEAUMONT/OISE; 05 96 57 11 14
+83; BRY SUR MARNE (Hôpital saint Camille);2 rue des Pères Camilliens	94366	BRY SUR MARNE; 05 65 20 50 75
+23; CORBEIL ESSONNES (Centre Hospitalier);59 Bd Henri Dunant	91106	CORBEIL ESSONNES; 01 60 90 30 66
+33; COULOMMIERS (Centre Hospitalier);7 rue Gabriel Péri	77120	COULOMMIERS	; 03 44 61 65 30
+43; CRETEIL (Centre Hospitalier Intercommunal);40 Av de Verdun	94010	CRETEIL; 01 45 17 53 53

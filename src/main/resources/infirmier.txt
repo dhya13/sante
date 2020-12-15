@@ -1,0 +1,17 @@
+Daniel1z;David1;salle attente;4
+Daniel2z;David2;salle attente;3
+Daniel3z;David3;salle attente;83
+Daniel4z;David4;salle attente;43
+Daniel4z;David5;salle attente;43
+Daniel5z;David6;anesthesie;33
+Daniel6z;David7;anesthesie;33
+Daniel7z;David8;anesthesie;33
+Daniel8z;David9;anesthesie;23
+Daniel9z;David10;anesthesie;23
+Daniel10z;David11;anesthesie;23
+Daniel11z;David12;anesthesie;23
+Daniel12z;David13;dialyse;3
+Daniel13z;David14;dialyse;3
+Daniel14z;David15;dialyse;83
+Daniel15z;David16;dialyse;43
+Daniel16z;David17;dialyse;23

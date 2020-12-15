@@ -1,0 +1,17 @@
+Alain1;Joffrey1;Chirurgien;4
+Alain2;Joffrey2;Chirurgien;3
+Alain3;Joffrey3;Chirurgien;83
+Alain4;Joffrey4;Chirurgien;43
+Alain4;Joffrey5;Chirurgien;43
+Alain5;Joffrey6;Chirurgien;33
+Alain6;Joffrey7;Chirurgien;33
+Alain7;Joffrey8;Chirurgien;33
+Alain8;Joffrey9;Chirurgien;23
+Alain9;Joffrey10;Chirurgien;23
+Alain10;Joffrey11;Chirurgien;23
+Alain11;Joffrey12;Chirurgien;23
+Alain12;Joffrey13;Chirurgien;3
+Alain13;Joffrey14;Chirurgien;3
+Alain14;Joffrey15;Chirurgien;83
+Alain15;Joffrey16;Chirurgien;43
+Alain16;Joffrey17;Chirurgien;23
