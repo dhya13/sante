@@ -14,9 +14,9 @@
 	<name>sante</name>
 	<description>Demo project for Spring Boot</description>
 
-	<properties>
+	<!--<properties>
 		<java.version>8</java.version>
-	</properties>
+	</properties>-->
 
 	<dependencies>
 		<dependency>
