@@ -1,0 +1,78 @@
+<p>infirmiers works!</p>
+<p-table [value]="infirmiers" [paginator]="true" [rows]="10" selectionMode="single" [(selection)]="selectedInfirmier" dataKey="id"
+>
+    <ng-template pTemplate="header">
+        <tr  class="ui-resizable-column">
+            <th>Id</th>
+            <th>Prénom</th>
+            <th>Nom</th>
+            <th>Spécialité</th>
+            <th>Identi.Hopital</th>
+            <th style="position: static;"> Actions</th>
+            
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-infirmier>
+        <tr>
+            <td>{{infirmier.id }}</td>
+            <td>{{infirmier.name | dhyapipe: false}}</td>
+            <td>{{infirmier.surname | uppercase}}</td> 
+            <td>{{infirmier.speciality}}</td>
+            <td>{{infirmier.hospitalId}}</td>
+            <td>
+                <p-button type="button" (click)="showDialogModifier(infirmier)" aria-posinset="75%" icon="pi pi-cloud" styleClass="p-button-text"></p-button>
+                <p-button type="button" aria-posinset="75%" icon="pi pi-trash" styleClass="p-button-text"></p-button>
+            </td>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="paginatorleft">
+        <p-button type="button" icon="pi pi-plus" styleClass="p-button-text"></p-button>
+    </ng-template>
+    <ng-template pTemplate="paginatorright">
+        <p-button type="button" icon="pi pi-cloud" styleClass="p-button-text"></p-button>
+    </ng-template>
+</p-table>
+
+<p-dialog header="Titre" [(visible)]="displayModifier" [(modal)]="modal"  [style]="{width: '50vw'}">
+    <p-header>
+        Modifier Infirmier
+    </p-header>
+    <div class="p-fluid">
+        <tr>
+            <td>
+                <label for="firstname4" class="p-col-12 p-mb-2 p-md-2 p-mb-md-0">Prénom</label>
+            </td>
+            <td><div class="p-col-12 p-md-10">
+                <input id="firstname4" type="text" pInputText  [(value)]="selectedInfirmier.name"> 
+            </div>
+        </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="lastname4" class="p-col-12 p-mb-2 p-md-2 p-mb-md-0">Nom</label>
+            </td>   
+            <td>
+                <div class="p-col-12 p-md-10">
+                <input id="lastname4" type="text" pInputText [(value)]="selectedInfirmier.surname "> 
+            </div>
+        </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="speciality" class="p-col-12 p-mb-2 p-md-2 p-mb-md-0">Spécialité</label>
+            </td>
+            <td>
+                <div class="p-col-12 p-md-10">
+                    <input id="speciality" type="text" pInputText [(value)]="selectedInfirmier.speciality"> 
+                </div>
+            </td>
+        </tr>
+    </div>
+
+    <p-footer>
+        <p-footer>
+            <button type="button" pButton icon="pi pi-times" label="Annuler" (click)="reject()"></button>
+            <button type="button" pButton icon="pi pi-check" label="Modifier" (click)="modifierInfirmier()"></button>
+        </p-footer>
+    </p-footer>
+</p-dialog>

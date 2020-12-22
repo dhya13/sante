@@ -1,0 +1,60 @@
+<p>hopital works!</p>
+
+
+<p-table [value]="hospitals" [paginator]="true" [rows]="10" selectionMode="single" [(selection)]="selectedHopital" dataKey="id"
+>
+    <ng-template pTemplate="header">
+        <tr  class="ui-resizable-column">
+            <th>Id</th>
+            <th>Ident. Hopital</th>
+            <th>Nomination</th>
+            <th>adresse</th>
+            <th>Phone</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-hopital>
+        <tr>
+            <td>{{hopital.id}}</td>
+            <td><a href="#" (click)="onClickHop(hopital)">{{hopital.name}}</a></td>
+            <td>{{hopital.labelName | uppercase}}</td>
+            <td>{{hopital.adresse}}</td>
+            <td>{{hopital.phone}}</td> 
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="paginatorleft">
+        <p-button type="button" icon="pi pi-plus" styleClass="p-button-text"></p-button>
+    </ng-template>
+    <ng-template pTemplate="paginatorright">
+        <p-button type="button" icon="pi pi-cloud" styleClass="p-button-text"></p-button>
+    </ng-template>
+</p-table>
+
+<p-dialog header="Titre" [(visible)]="display" [(modal)]="modal"  [style]="{width: '70vw'}">
+    <p-header>
+        Hopital {{selectedLabelHopital}}
+    </p-header>
+    <p-table [value]="medecins" [paginator]="true" [rows]="10" >
+        <ng-template pTemplate="header">
+            <tr  class="ui-resizable-column">
+                <th>Id</th>
+                <th>Nom practicien</th>
+                <th>Prénom Practicien</th>
+                <th>Spécialité</th>
+                <th>Hopital Ident</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-medecin>
+            <tr>
+                <td style="width: 25%; height: 15%;">{{medecin.id}}</td>
+                <td>{{medecin.name}}</td>
+                <td>{{medecin.surname}}</td>
+                <td>{{medecin.speciality}}</td>
+                <td>{{medecin.hospitalId}}</td> 
+            </tr>
+        </ng-template>
+        
+    </p-table>
+    <p-footer>
+        //buttons
+    </p-footer>
+</p-dialog>

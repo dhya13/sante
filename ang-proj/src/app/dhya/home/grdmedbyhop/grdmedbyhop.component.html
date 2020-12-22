@@ -1,0 +1,21 @@
+<p-table [value]="medecins" [paginator]="true" [rows]="10" >
+    <ng-template pTemplate="header">
+        <tr  class="ui-resizable-column">
+            <th>Id</th>
+            <th>Nom practicien</th>
+            <th>Prénom Practicien</th>
+            <th>Spécialité</th>
+            <th>Hopital Ident</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-medecin>
+        <tr>
+            <td>{{medecin.id}}</td>
+            <td>{{medecin.name}}</td>
+            <td>{{medecin.surname}}</td>
+            <td>{{medecin.speciality}}</td>
+            <td>{{medecin.hopitalId}}</td> 
+        </tr>
+    </ng-template>
+    
+</p-table>
